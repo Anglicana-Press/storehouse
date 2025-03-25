@@ -1,1 +1,35 @@
 @import 'tailwindcss';
+
+@theme {
+	--font-sans: 'Noto Sans', 'Noto Sans Hebrew', ui-sans-serif, system-ui, sans-serif;
+	--font-serif: 'Noto Serif', 'Noto Serif Hebrew', ui-serif, serif;
+	--font-mono: 'Noto Mono', 'Noto Sans Hebrew', ui-monospace, monospace;
+
+	--color-*: initial;
+	--color-red-min: oklch(0.2 0.2 0);
+	--color-red-med: oklch(0.5 0.2 0);
+	--color-red-max: oklch(0.8 0.2 0);
+	--color-amber-min: oklch(0.2 0.2 90);
+	--color-amber-med: oklch(0.5 0.2 90);
+	--color-amber-max: oklch(0.8 0.2 90);
+	--color-green-min: oklch(0.2 0.2 135);
+	--color-green-med: oklch(0.5 0.2 135);
+	--color-green-max: oklch(0.8 0.2 135);
+	--color-blue-min: oklch(0.2 0.2 225);
+	--color-blue-med: oklch(0.5 0.2 225);
+	--color-blue-max: oklch(0.8 0.2 225);
+	--color-purple-min: oklch(0.2 0.2 315);
+	--color-purple-med: oklch(0.5 0.2 315);
+	--color-purple-max: oklch(0.8 0.2 315);
+	--color-black: oklch(0.05 0 0);
+	--color-gray-min: oklch(0.2 0 0);
+	--color-gray-med: oklch(0.5 0 0);
+	--color-gray-max: oklch(0.8 0 0);
+	--color-white: oklch(0.95 0 0);
+
+	--spacing: 8px;
+}
+
+body {
+	@apply bg-white text-black;
+}
