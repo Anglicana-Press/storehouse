@@ -10,6 +10,12 @@
     "ghcr.io/devcontainers-extra/features/pnpm": {}
   },
 
+  "secrets": {
+    "DATABASE_URL": {
+      "description": "URL for connecting to remote database."
+    }
+  },
+
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [3000, 5173],
 
@@ -35,6 +41,9 @@
         "editor.formatOnSave": true,
         "[svelte]": {
           "editor.defaultFormatter": "svelte.svelte-vscode"
+        },
+        "files.associations": {
+          "*.css": "tailwindcss"
         }
       }
     }
