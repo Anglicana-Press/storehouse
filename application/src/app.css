@@ -1,31 +1,49 @@
 @import 'tailwindcss';
 
+:root {
+  --lightness-min: 0.292;
+  --lightness-med: 0.618;
+  --lightness-max: 0.944;
+  --chroma-min: 0.258;
+  --chroma-med: 0.209;
+  --chroma-max: 0.159;
+  --hue-base: 29;
+  --hue-degrees: 360;
+  --hue-steps: 5;
+  --hue-step: calc(var(--hue-degrees) / var(--hue-steps));
+  --hue-red: calc(var(--hue-base) + calc(var(--hue-step) * 0));
+  --hue-amber: calc(var(--hue-base) + calc(var(--hue-step) * 1));
+  --hue-green: calc(var(--hue-base) + calc(var(--hue-step) * 2));
+  --hue-blue: calc(var(--hue-base) + calc(var(--hue-step) * 3));
+  --hue-purple: calc(var(--hue-base) + calc(var(--hue-step) * 4));
+}
+
 @theme {
 	--font-sans: 'Noto Sans', 'Noto Sans Hebrew', ui-sans-serif, system-ui, sans-serif;
 	--font-serif: 'Noto Serif', 'Noto Serif Hebrew', ui-serif, serif;
 	--font-mono: 'Noto Mono', 'Noto Sans Hebrew', ui-monospace, monospace;
 
 	--color-*: initial;
-	--color-red-min: oklch(0.2 0.2 0);
-	--color-red-med: oklch(0.5 0.2 0);
-	--color-red-max: oklch(0.8 0.2 0);
-	--color-amber-min: oklch(0.2 0.2 90);
-	--color-amber-med: oklch(0.5 0.2 90);
-	--color-amber-max: oklch(0.8 0.2 90);
-	--color-green-min: oklch(0.2 0.2 135);
-	--color-green-med: oklch(0.5 0.2 135);
-	--color-green-max: oklch(0.8 0.2 135);
-	--color-blue-min: oklch(0.2 0.2 225);
-	--color-blue-med: oklch(0.5 0.2 225);
-	--color-blue-max: oklch(0.8 0.2 225);
-	--color-purple-min: oklch(0.2 0.2 315);
-	--color-purple-med: oklch(0.5 0.2 315);
-	--color-purple-max: oklch(0.8 0.2 315);
-	--color-black: oklch(0.05 0 0);
-	--color-gray-min: oklch(0.2 0 0);
+	--color-red-min: oklch(var(--lightness-min) var(--chroma-min) var(--hue-red));
+	--color-red-med: oklch(var(--lightness-med) var(--chroma-min) var(--hue-red));
+	--color-red-max: oklch(var(--lightness-max) var(--chroma-min) var(--hue-red));
+	--color-amber-min: oklch(var(--lightness-min) var(--chroma-min) var(--hue-amber));
+	--color-amber-med: oklch(var(--lightness-med) var(--chroma-min) var(--hue-amber));
+	--color-amber-max: oklch(var(--lightness-max) var(--chroma-min) var(--hue-amber));
+	--color-green-min: oklch(var(--lightness-min) var(--chroma-min) var(--hue-green));
+	--color-green-med: oklch(var(--lightness-med) var(--chroma-min) var(--hue-green));
+	--color-green-max: oklch(var(--lightness-max) var(--chroma-min) var(--hue-green));
+	--color-blue-min: oklch(var(--lightness-min) var(--chroma-min) var(--hue-blue));
+	--color-blue-med: oklch(var(--lightness-med) var(--chroma-min) var(--hue-blue));
+	--color-blue-max: oklch(var(--lightness-max) var(--chroma-min) var(--hue-blue));
+	--color-purple-min: oklch(var(--lightness-min) var(--chroma-min) var(--hue-purple));
+	--color-purple-med: oklch(var(--lightness-med) var(--chroma-min) var(--hue-purple));
+	--color-purple-max: oklch(var(--lightness-max) var(--chroma-max) var(--hue-purple));
+	--color-black: oklch(0 0 0);
+	--color-gray-min: oklch(0.25 0 0);
 	--color-gray-med: oklch(0.5 0 0);
-	--color-gray-max: oklch(0.8 0 0);
-	--color-white: oklch(0.95 0 0);
+	--color-gray-max: oklch(0.75 0 0);
+	--color-white: oklch(1 0 0);
 
 	--spacing: 8px;
 }
