@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { ClassValue } from 'svelte/elements';
 
-	let props: { class: ClassValue } = $props();
+	let props: { class: ClassValue; colors: { bottom: string; top: string } } = $props();
 </script>
 
 <svg
@@ -13,8 +13,8 @@
 >
 	<defs>
 		<linearGradient id="gradient" gradientTransform="rotate(90)">
-			<stop offset="0%" stop-color="var(--color-white)" />
-			<stop offset="100%" stop-color="var(--color-purple-min)" />
+			<stop offset="0%" stop-color="var({props.colors.top})" />
+			<stop offset="100%" stop-color="var({props.colors.bottom})" />
 		</linearGradient>
 	</defs>
 	<g
