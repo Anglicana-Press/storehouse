@@ -11,6 +11,9 @@ importers:
       '@inlang/paraglide-js':
         specifier: ^2.0.0
         version: 2.0.5
+      '@lucide/svelte':
+        specifier: ^0.484.0
+        version: 0.484.0(svelte@5.25.3)
       '@oslojs/crypto':
         specifier: ^1.0.1
         version: 1.0.1
@@ -805,6 +808,11 @@ packages:
 
   '@lix-js/server-api-schema@0.1.1':
     resolution: {integrity: sha512-W1Z7KKOxAQ4Dag9V2wrDevHPh5rPk+icBUsxNfNCNB2tlPrKpba99562vcTCPoT03KXpihEbWutZNujCRtMA+g==}
+
+  '@lucide/svelte@0.484.0':
+    resolution: {integrity: sha512-yuHwfJxE1n3kOg/4hIsvAUrBv3Mood/8BCcugUyRhxyr4EJDtjHJiiCpjJmtnk1gqkCYAEREKoGPaSGilcjYKw==}
+    peerDependencies:
+      svelte: ^5
 
   '@mdx-js/react@3.1.0':
     resolution: {integrity: sha512-QjHtSaoameoalGnKDT3FoIl4+9RwyTmo9ZJGBdLOks/YOiWHoRDI3PUwEzOE7kEmGcV3AFcp9K6dYu9rEuKLAQ==}
@@ -4039,6 +4047,10 @@ snapshots:
       - babel-plugin-macros
 
   '@lix-js/server-api-schema@0.1.1': {}
+
+  '@lucide/svelte@0.484.0(svelte@5.25.3)':
+    dependencies:
+      svelte: 5.25.3
 
   '@mdx-js/react@3.1.0(@types/react@19.0.12)(react@19.0.0)':
     dependencies:
