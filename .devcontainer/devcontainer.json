@@ -35,7 +35,8 @@
         "ms-azuretools.vscode-docker",
         "ms-dotnettools.csdevkit",
         "ms-vscode-remote.remote-containers",
-        "svelte.svelte-vscode"
+        "svelte.svelte-vscode",
+        "tamasfe.even-better-toml"
       ],
       "settings": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
