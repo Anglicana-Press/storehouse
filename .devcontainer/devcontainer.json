@@ -20,7 +20,7 @@
   // "forwardPorts": [3000, 5173],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "cd application && pnpm install && pnpm dev",
+  // "postCreateCommand": "cd application && pnpm install && pnpm dev",
 
   // Configure tool-specific properties.
   "customizations": {
@@ -33,6 +33,7 @@
         "github.vscode-github-actions",
         "github.vscode-pull-request-github",
         "ms-azuretools.vscode-docker",
+        "ms-dotnettools.csdevkit",
         "ms-vscode-remote.remote-containers",
         "svelte.svelte-vscode"
       ],
