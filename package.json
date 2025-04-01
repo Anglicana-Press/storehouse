@@ -7,8 +7,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.7.0",
-  "devDependencies": {
-    "supabase": "^2.20.5"
-  }
+  "packageManager": "pnpm@10.7.0"
 }
